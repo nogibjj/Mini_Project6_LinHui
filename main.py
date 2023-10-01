@@ -12,8 +12,10 @@ cursor = conn.cursor()
 # CRUD Operations
 
 # 1. Create: Add a new record.
-create_data = ('2023-10-01', '150.00', '155.00', '149.00', '154.50', '154.40', '5000000')
-cursor.execute('INSERT INTO my_table (Date, Open, High, Low, Close, Adj, Volume) VALUES (?, ?, ?, ?, ?, ?, ?)', create_data)
+create_data = ('2023-10-01', '150.00', '155.00', \
+            '149.00', '154.50', '154.40', '5000000')
+cursor.execute('INSERT INTO my_table (Date, Open, High, \
+            Low, Close, Adj, Volume) VALUES (?, ?, ?, ?, ?, ?, ?)', create_data)
 conn.commit()
 write_to_log("Record with date '2023-10-01' created successfully.")
 
@@ -44,7 +46,8 @@ write_to_log(f"Total number of records: {total_records[0]}")
 # 2. Query to fetch records where the `High` value is above '160.00'.
 cursor.execute("SELECT * FROM my_table WHERE High > '160.00' LIMIT 5")
 high_value_records = cursor.fetchall()
-write_to_log(f"Number of records with High value above 160.00: {len(high_value_records)}")
+write_to_log(f"Number of records with High value above 160.00: \
+            {len(high_value_records)}")
 
 conn.close()
 
