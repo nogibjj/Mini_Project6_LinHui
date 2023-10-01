@@ -1,3 +1,4 @@
+[![CI](https://github.com/nogibjj/Mini_Project5_LinHui/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Mini_Project5_LinHui/actions/workflows/cicd.yml)
 # Python SQLite Database Interaction
 
 This script demonstrates how to interact with an SQLite database using Python's sqlite3 module. It performs CRUD operations (Create, Read, Update, Delete) and executes additional SQL queries on a table within the provided SQLite database.
