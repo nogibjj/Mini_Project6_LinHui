@@ -50,7 +50,3 @@ write_to_log(f"Number of records with High value above 160.00: \
             {len(high_value_records)}")
 
 conn.close()
-
-# Return the path to the log file for downloading
-log_file_path = "database_operations.log"
-log_file_path
