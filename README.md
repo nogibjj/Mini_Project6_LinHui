@@ -1,19 +1,24 @@
-This is a template for course IDS706 Projects. It contains:
+# Python SQLite Database Interaction
 
-1. `.devcontainer` includes a Dockerfile and devcontainer.json. The 'Dockerfile' within this folder specifies how the container should be built, and other settings in this directory may control development environment configurations.
+This script demonstrates how to interact with an SQLite database using Python's sqlite3 module. It performs CRUD operations (Create, Read, Update, Delete) and executes additional SQL queries on a table within the provided SQLite database.
 
-2. `workflows` includes GitHub Actions, which contain configuration files for setting up automated build, test, and deployment pipelines for your project.
+## Features
 
-3. `.gitignore` is used to specify which files or directories should be excluded from version control when using Git.
+1. Connect to the SQLite database.
+2. CRUD Operations:
+    - Create: Add a new record.
+    - Read: Fetch records.
+    - Update: Modify an existing record.
+    - Delete: Remove a record.
+3. Execute two additional SQL queries:
+    - Fetch the total number of records.
+    - Fetch records based on a condition.
 
-4. `Makefile` is a configuration file used in Unix-based systems for automating tasks and building software. It contains instructions and dependencies for compiling code, running tests, and other development tasks.
+## Requirements
 
-5. `README.md` is the instruction file for the readers.
+1. Python
+2. SQLite database (AAPL.db)
 
-6. `requirements.txt` is to specify the dependencies (libraries and packages) required to run the project.
+## Log
 
-7. `test_main.py` is a test file for main.py that can successfully run in IDEs.
-
-8. `main.py` is a Python file.
-
-It used gitbuh actions to test and run. All processes are completed.
+After executing the script, a log of the database operations is saved in database_operations.log. This log provides evidence of the successful execution of the database operations.
