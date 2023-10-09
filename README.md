@@ -1,5 +1,5 @@
 
-# Python SQLite Database Interaction
+# Complex SQL query
 
 ## Deaths & Insurance Database Overview
 
@@ -29,7 +29,12 @@ This database, "Deaths&Insurance.db", provides insights into potentially excess 
 - State: State name.
 - Various columns related to uninsured rates, insurance coverage changes, employer health insurance coverage, marketplace health insurance coverage, tax credits, Medicaid and Medicare enrollment for different years.
 
-## The SQL Query
+## The SQL Query 
+
+The SQL Query can be executed in two ways:
+1. Use the "complex query.sql" and db file.
+2. Use the "main.py" and db file.
+Both approaches execute the same SQL Query.
 
 The provided SQL query aims to join the two tables on the State column and aggregate data to find the total observed deaths, potentially excess deaths, and the average percentage of potentially excess deaths for each state in 2015. Additionally, it fetches relevant health insurance data from 2015. The results are sorted based on the total number of potentially excess deaths.
 
